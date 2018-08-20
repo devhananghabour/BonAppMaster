@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hud_check_bg"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_20"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingRight="@dimen/dp_15"
+    android:layout_margin="@dimen/dp_20"
+    android:layout_gravity="center"
+
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_16"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.FontDemiBold"
+        android:text="@string/thank_you"
+        android:textColor="@color/appDarkGreen"
+        android:drawableTop="@drawable/ic_hud_check"
+        android:drawablePadding="@dimen/dp_10" />
+
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.FontMedium"
+        android:text="@string/your_payment_is_successfully_done"
+        android:textColor="@color/appDarkGreen"
+        android:layout_marginTop="@dimen/dp_12"
+        android:gravity="center"
+        android:textAlignment="center"
+
+        />
+
+</LinearLayout>

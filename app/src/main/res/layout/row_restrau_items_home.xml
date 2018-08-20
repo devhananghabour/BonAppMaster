@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="@dimen/dp_5"
+    app:cardCornerRadius="@dimen/dp_8"
+    android:id="@+id/cv_item_home"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:clickable="false">
+
+    <RelativeLayout
+        android:id="@+id/rl_row_deal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/ll_left_count">
+
+            <TextView
+                android:id="@+id/tv_quantity_left"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:background="@drawable/bg_circle_light_green"
+                android:textSize="@dimen/sp_10"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="@style/TextAppearance.FontDemiBold"
+                android:text="12" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_10"
+                android:textColor="@color/appLightGreen"
+                android:text="@string/left"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.FontDemiBold"
+                android:layout_marginTop="@dimen/dp_5" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/appDarkGreen"
+            android:textSize="@dimen/sp_16"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@id/ll_left_count"
+            android:layout_alignParentLeft="true"
+            android:textAppearance="@style/TextAppearance.FontMedium"
+            tools:text="Pastry of today  "
+
+            />
+
+        <TextView
+            android:id="@+id/tv_item_revised_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/appDarkGreen"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textSize="@dimen/sp_14"
+            tools:text="35 AED"
+            android:textAppearance="@style/TextAppearance.FontRegular" />
+
+
+        <TextView
+            android:id="@+id/tv_item_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrayText"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@id/tv_item_name"
+            android:layout_toRightOf="@id/tv_item_revised_price"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:textAppearance="@style/TextAppearance.FontRegular"
+            tools:text="70 AED"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_item_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/appDarkGreen"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textSize="@dimen/sp_14"
+            android:layout_toRightOf="@id/tv_item_original_price"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:textAppearance="@style/TextAppearance.FontRegular"
+            tools:text="(50%)"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_original_price"
+            android:textColor="@color/colorBrownText"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textAppearance="@style/TextAppearance.FontRegular"
+            tools:text="Pickup before 18:00" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

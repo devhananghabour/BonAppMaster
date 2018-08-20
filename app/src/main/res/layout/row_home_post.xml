@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/row_home_post_fl_root"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/dp_300"
+             android:layout_marginBottom="@dimen/dp_10">
+
+
+    <ImageView
+        android:id="@+id/iv_restrau_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:id="@+id/fl_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#68000000" />
+
+    <ImageView
+        android:id="@+id/row_home_iv_favorite"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="end|top"
+        android:layout_margin="12dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_favorite"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_15"
+        android:gravity="top|start"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_3">
+
+        <TextView
+            android:id="@+id/tv_restrau_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect_corener_red"
+            android:textAppearance="@style/TextAppearance.FontRegular"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_16"
+            tools:text="1.0 km away" />
+
+        <ImageView
+            android:id="@+id/row_home_post_ivDelivery"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="5dp"
+            android:visibility="gone"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/ic_delivery" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/tv_restrau_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Pizza Lounge"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_24"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:textAppearance="@style/TextAppearance.FontBold" />
+
+        <TextView
+            android:id="@+id/tv_restrau_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Al Ladeem Street"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.FontMedium" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_12" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_faded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#97ffffff"
+        android:visibility="gone" />
+
+</FrameLayout>

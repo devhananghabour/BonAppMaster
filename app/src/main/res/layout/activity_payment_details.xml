@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_payment_details"
+    android:orientation="vertical"
+    android:background="@color/colorBgWhite"
+    android:clickable="false"
+    tools:context="com.bonapp.app.bonapp.activities.PaymentDetailsActivity">
+
+    <include
+        android:id="@+id/include_toolbar"
+        layout="@layout/toolbar_white" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cards_listing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_below="@id/include_toolbar" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_no_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/include_toolbar"
+        android:layout_marginTop="@dimen/dp_50"
+        android:padding="@dimen/dp_40"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.FontBold"
+            android:textColor="@color/appDarkGreen"
+            android:text="@string/nothing_to_see"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/sp_24"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.FontMedium"
+            android:textColor="@color/appDarkGreen"
+            android:text="@string/no_cards_message"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_12"
+
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_no_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:cardElevation="@dimen/dp_5"
+        android:background="@color/colorWhite"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_norecord_messsge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/internet_offline"
+                android:textColor="@color/appDarkGreen"
+                android:textAppearance="@style/TextAppearance.FontRegular" />
+
+            <Button
+                android:id="@+id/btn_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:text="@string/retry"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textAppearance="@style/TextAppearance.FontRegular"
+                android:background="@color/appDarkGreen"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp_10">
+
+    <EditText
+        android:layout_margin="@dimen/dp_10"
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:hint="@string/hint_search_country"
+        android:padding="@dimen/dp_10"
+        android:textSize="@dimen/sp_14"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="@dimen/dp_10"
+        android:background="@null"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="textPersonName"
+        android:maxLength="15" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/et_search"
+        android:id="@+id/rv_country_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="@dimen/dp_1"
+        android:scrollbars="none" />
+
+
+    <TextView
+        android:id="@+id/tv_no_records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_records_found"
+        android:layout_centerInParent="true"
+        android:textColor="@color/appDarkGreen"
+        android:textAppearance="@style/TextAppearance.FontBold"
+        android:textSize="@dimen/sp_18"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

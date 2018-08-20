@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#045461</color>
+    <color name="colorPrimaryDark">#045461</color>
+    <color name="colorAccent">#DF4B7B</color>
+
+    <color name="appDarkGreen">#045461</color>
+    <color name="appLightGreen">#498E93</color>
+    <color name="appBrightPink">#DF4B7B</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrayText">#999797</color>
+    <color name="colorBrownText">#4f4f4f</color>
+    <color name="colorBlackishText">#2e3333</color>
+    <color name="colorAccountView">#dfe0e0</color>
+    <color name="colorBlue">#0076ff</color>
+    <color name="colorTextHint">#949f9f</color>
+    <color name="colorView">#c8c7cc</color>
+    <color name="colorCreateDealInput">#498E93</color>
+    <color name="colorCreateDealSelected">#d3e7d9</color>
+    <color name="colorRed">#eb4754</color>
+    <color name="colorBlack1">#323637</color>
+    <color name="colorGreenHint">#8f9d9d</color>
+    <color name="colorBgWhite">#f9fafa</color>
+    <color name="transparentGreen">#045461</color>
+
+    <color name="orange">#fff</color>
+    <color name="skyblue">#34a3c1</color>
+    <color name="yellow">#efbd26</color>
+</resources>

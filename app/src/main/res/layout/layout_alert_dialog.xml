@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rect_corner_radius"
+    android:layout_marginStart="@dimen/dp_20"
+    android:layout_marginEnd="@dimen/dp_20"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#040404"
+        android:textAppearance="@style/TextAppearance.FontBold"
+        tools:text="E-mail address changed!"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginTop="@dimen/dp_15"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#040404"
+        android:textAppearance="@style/TextAppearance.FontRegular"
+        tools:text="A confirmation mail has been sent to your new address, please read it and activate your e-mail. You will now be logged out. "
+        android:textSize="@dimen/sp_14"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:textAlignment="center"
+
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="#4e4d4d4d" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_negative_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlue"
+            android:textAppearance="@style/TextAppearance.FontMedium"
+            tools:text="Cancel"
+            android:gravity="center"
+            android:padding="@dimen/dp_12"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <View
+            android:layout_width="@dimen/dp_0.5"
+            android:layout_height="match_parent"
+            android:background="#4e4d4d4d" />
+
+        <TextView
+            android:id="@+id/tv_positive_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorBlue"
+            android:textAppearance="@style/TextAppearance.FontMedium"
+            tools:text="Logout"
+            android:gravity="center"
+            android:padding="@dimen/dp_12"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+    </LinearLayout>
+
+</LinearLayout>

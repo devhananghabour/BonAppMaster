@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/colorView"
+        android:layout_marginLeft="@dimen/dp_12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_side"
+            android:layout_width="@dimen/dp_5"
+            android:layout_height="match_parent"
+            android:background="@color/appLightGreen"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.FontMedium"
+                android:textColor="@color/appDarkGreen"
+                android:textSize="@dimen/sp_16"
+                tools:text="Pastry of today  " />
+
+            <TextView
+                android:id="@+id/tv_item_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textAppearance="@style/TextAppearance.FontRegular"
+                android:textColor="@color/appDarkGreen"
+                android:textSize="@dimen/sp_14"
+                tools:text="Pastry of today  " />
+
+
+            <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_item_revised_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.FontRegular"
+                    android:textColor="@color/appDarkGreen"
+                    android:textSize="@dimen/sp_14"
+                    tools:text="35 AED" />
+
+
+                <TextView
+                    android:id="@+id/tv_item_original_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:textAppearance="@style/TextAppearance.FontRegular"
+                    android:textColor="@color/colorGrayText"
+                    android:textSize="@dimen/sp_14"
+                    tools:text="70 AED"
+
+                    />
+
+                <View
+                    android:layout_width="@dimen/dp_3"
+                    android:layout_height="@dimen/dp_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:background="@drawable/bg_circle_dark_green"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_discount_perc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:textAppearance="@style/TextAppearance.FontRegular"
+                    android:textColor="@color/appDarkGreen"
+                    android:textSize="@dimen/sp_14"
+                    tools:text="50%"
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.FontRegular"
+                android:textColor="@color/colorBrownText"
+                android:textSize="@dimen/sp_14"
+                tools:text="12:00-18:00"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dp_12"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_quantity_left"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:background="@drawable/bg_circle_light_green"
+                android:gravity="center"
+                android:text="12"
+                android:textAppearance="@style/TextAppearance.FontDemiBold"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_10" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="@string/left"
+                android:textAppearance="@style/TextAppearance.FontDemiBold"
+                android:textColor="@color/appLightGreen"
+                android:textSize="@dimen/sp_10" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_faded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b4ffffff"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:visibility="gone" />
+
+</FrameLayout>

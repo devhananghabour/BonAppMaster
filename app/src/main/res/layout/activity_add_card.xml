@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_add_card"
+    android:background="@color/colorBgWhite"
+    tools:context="com.bonapp.app.bonapp.activities.AddCardActivity">
+
+    <include layout="@layout/toolbar_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/colorAccountView" />
+
+    <EditText
+        android:id="@+id/et_card_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appDarkGreen"
+        android:hint="@string/enter_last_four_digit_of_card"
+        android:padding="@dimen/dp_15"
+        android:drawableLeft="@drawable/ic_paymentmethod"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/sp_16"
+        android:background="@color/colorWhite"
+        android:inputType="number"
+        android:maxLength="4"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textAppearance="@style/TextAppearance.FontMedium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/colorAccountView"
+
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/colorAccountView"
+        android:layout_marginTop="@dimen/dp_15" />
+
+    <EditText
+        android:id="@+id/et_card_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appDarkGreen"
+        android:hint="@string/name_to_identify_your_card"
+        android:padding="@dimen/dp_15"
+        android:drawableLeft="@drawable/_c_mydetails"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/sp_16"
+        android:background="@color/colorWhite"
+        android:inputType="textPersonName|textCapWords"
+        android:maxLength="30"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.FontMedium" />
+
+    <!--
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:paddingLeft="@dimen/dp_15"
+             android:paddingRight="@dimen/dp_15"
+             android:visibility="gone"
+             >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:drawableStart="@drawable/ic_paymentmethod"
+             android:text="@string/expiry"
+             android:textColor="@color/colorBlack1"
+             android:drawablePadding="@dimen/dp_10"
+             android:layout_gravity="center_vertical"
+             android:textAppearance="@style/TextAppearance.FontDemiBold"
+
+             />
+
+
+         <TextView
+             android:id="@+id/tv_expiry_date"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:hint="@string/mm_yy"
+             android:textColorHint="@color/colorGreenHint"
+             android:layout_marginLeft="@dimen/dp_10"
+             android:layout_gravity="center_vertical"
+             android:paddingTop="@dimen/dp_15"
+             android:paddingBottom="@dimen/dp_15"
+             android:textColor="@color/appDarkGreen"
+             android:textSize="@dimen/sp_16"
+             />
+    <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/cvv"
+             android:textColor="@color/colorBlack1"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="@dimen/dp_40"
+             android:textAppearance="@style/TextAppearance.FontMedium"
+             />
+
+
+         <EditText
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:hint="@string/xxx"
+             android:textColorHint="@color/colorGreenHint"
+             android:paddingTop="@dimen/dp_15"
+             android:paddingBottom="@dimen/dp_15"
+             android:layout_marginLeft="@dimen/dp_10"
+             android:layout_gravity="center_vertical"
+             android:background="@null"
+             android:textSize="@dimen/sp_16"
+             android:textAppearance="@style/TextAppearance.FontMedium"
+             android:textColor="@color/appDarkGreen"
+             />
+
+         </LinearLayout>
+    -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/colorAccountView" />
+
+</LinearLayout>

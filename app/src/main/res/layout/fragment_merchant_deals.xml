@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    >
+
+
+    <Button
+        android:id="@+id/btn_create_deal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_rect_corener_red"
+        android:text="@string/create_deal"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="@style/TextAppearance.FontDemiBold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_merchant_deals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_create_deal" />
+
+    <TextView
+        android:id="@+id/tv_no_deals_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/appDarkGreen"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/sp_18"
+        android:text="@string/no_deals_created_yet"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp_20"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_no_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:cardElevation="@dimen/dp_5"
+        android:background="@color/colorWhite"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_not_loaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_not_loaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deals_not_able_to_load"
+                android:textColor="@color/appDarkGreen"
+                android:textAppearance="@style/TextAppearance.FontRegular" />
+
+            <Button
+                android:id="@+id/btn_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:text="@string/retry"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textAppearance="@style/TextAppearance.FontRegular"
+                android:background="@color/appDarkGreen"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

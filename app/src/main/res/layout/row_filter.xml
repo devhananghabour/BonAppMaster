@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/row_filter_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:cardElevation="@dimen/dp_5">
+
+    <TextView
+        android:id="@+id/row_filter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.FontRegular"
+        android:background="@drawable/filter_item_selector"
+        android:padding="8dp"
+        android:textColor="@drawable/filter_item_selector"/>
+
+</android.support.constraint.ConstraintLayout>

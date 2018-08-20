@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_forgot_pwd"
+    android:background="@color/colorBgWhite"
+    tools:context="com.app.bonapp.fragments.accountfragments.ChangeEmailFragment">
+
+    <include layout="@layout/toolbar_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/colorAccountView"
+        android:layout_marginTop="@dimen/dp_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlackishText"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_16"
+            android:hint="@string/email_address"
+            android:textAppearance="@style/TextAppearance.FontMedium"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/dp_15"
+            android:drawableLeft="@drawable/ic_"
+            android:drawablePadding="@dimen/dp_10" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/colorAccountView" />
+
+
+</LinearLayout>

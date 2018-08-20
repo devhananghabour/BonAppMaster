@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "454475007088",
+    "firebase_url": "https://bonapp-b9d53.firebaseio.com",
+    "project_id": "bonapp-b9d53",
+    "storage_bucket": "bonapp-b9d53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454475007088:android:02a97ef5fcf1f79a",
+        "android_client_info": {
+          "package_name": "com.app.bonapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454475007088-o62qs00e5da3fjjq60dongkp8m176lmj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.bonapp",
+            "certificate_hash": "ea7be08736af922ee11d0d069ec5d4ec601652f4"
+          }
+        },
+        {
+          "client_id": "454475007088-dse20hjb3nek68d4ktsbmp3vco9op2kj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB3mSNrAVDwKxxBO-8LWlaR92H2Z2ftIQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454475007088-dse20hjb3nek68d4ktsbmp3vco9op2kj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

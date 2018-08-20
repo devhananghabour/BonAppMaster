@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.bonapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" tools:node="remove"/>
+
+
+    <application
+        android:name="app.bonapp.BonAppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:resizeableActivity="false"
+        tools:replace="android:icon,android:supportsRtl">
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+
+
+        <service android:name="app.bonapp.firebase.MyFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="app.bonapp.firebase.MyFireBaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="app.bonapp.serivces.SoundService"/>
+
+        <activity
+            android:name="app.bonapp.activities.SplashActivity"
+            android:theme="@style/FullScreenTheme"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="bonapp.ae"
+                    android:path="/restaurants" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.bonapp.activities.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="app.bonapp.activities.MyAccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="app.bonapp.activities.EditMyAccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="app.bonapp.activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+
+        <activity
+            android:name="app.bonapp.activities.MerchantActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.MerchantDealDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.RestaurantDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentStatusStyle" />
+        <activity
+            android:name="app.bonapp.activities.TutorialsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name="app.bonapp.activities.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.PaymentDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.AddressListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.NewAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.CreateDealActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.OrderHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.DeliverInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/TranslucentStatusStyle" />
+        <activity
+            android:name="app.bonapp.activities.RatingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+        <activity
+            android:name="app.bonapp.activities.AddCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+
+        <activity
+            android:name="app.bonapp.activities.WebviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteColorTheme" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="65e32f642c28558351cc77f2d3aa75992cd88aa3" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,1 @@
+include ':app', ':fblibrary', ':PayTabs_SDK', ':paytabs-android-SDK-v2.5'

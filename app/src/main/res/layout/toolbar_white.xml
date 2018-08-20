@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_size"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textColor="@color/appDarkGreen"
+        android:padding="@dimen/dp_10"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_greenback"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="@color/appDarkGreen"
+        android:layout_centerInParent="true"
+        android:textAppearance="@style/TextAppearance.FontDemiBold"
+        android:textSize="@dimen/sp_16"
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_end_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_merchant__bar"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:textColor="@color/appDarkGreen"
+        android:padding="@dimen/dp_10"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+
+        />
+
+</RelativeLayout>
