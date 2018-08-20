@@ -290,6 +290,7 @@
     <string name="cultery">Cutlery</string>
     <string name="helpUsProducePlastic">Help us produce plastic waste.</string>
     <string name="onlyRequest"> Only request cultery when you need it.</string>
+    <string name ="newwork">new</string>
 
 
 </resources>
